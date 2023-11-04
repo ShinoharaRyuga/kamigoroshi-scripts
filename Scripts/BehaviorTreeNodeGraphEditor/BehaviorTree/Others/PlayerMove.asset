@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d285eb63c2cdd74180de7cfceaa96ad, type: 3}
+  m_Name: PlayerMove
+  m_EditorClassIdentifier: 
+  rootNode:
+    rid: 4483656138319200256
+  nodes:
+  - rid: 4483656138319200256
+  - rid: 4483656138319200258
+  - rid: 4483656138319200259
+  - rid: 4483656138319200260
+  treeState: 0
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToPlayerPosition: {x: 0, y: 0, z: 0}
+  viewPosition: {x: 155.2, y: 11.2, z: 0}
+  viewScale: {x: 0.57175326, y: 0.57175326, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 4483656138319200256
+      type: {class: RootNode, ns: BehaviorTreeNodeGraphEditor, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 52dae51c-f442-4928-9064-5264d819482f
+        position: {x: 0, y: 0}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 4483656138319200258
+    - rid: 4483656138319200258
+      type: {class: Repeat, ns: BehaviorTreeNodeGraphEditor, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 0995e94f0c8dbb444aa177fd18a93f81
+        position: {x: 0.00018692017, y: 108.14901}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 4483656138319200259
+        restartOnSuccess: 1
+        restartOnFailure: 0
+    - rid: 4483656138319200259
+      type: {class: Sequencer, ns: BehaviorTreeNodeGraphEditor, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 866c74061b70fad4b82dca76c403f867
+        position: {x: 0.7999077, y: 220.3575}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 4483656138319200260
+    - rid: 4483656138319200260
+      type: {class: MoveToPlayerPosition, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: e889f0be43eb9b84d8d81889aedeb791
+        position: {x: -12.799988, y: 333}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        speed: 5
+        stoppingDistance: 0.1
+        updateRotation: 1
+        acceleration: 40
+        tolerance: 1
+        _playerController: {fileID: 0}

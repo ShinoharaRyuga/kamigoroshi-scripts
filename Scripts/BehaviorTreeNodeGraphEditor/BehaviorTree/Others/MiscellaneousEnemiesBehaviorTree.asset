@@ -1,0 +1,282 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d285eb63c2cdd74180de7cfceaa96ad, type: 3}
+  m_Name: MiscellaneousEnemiesBehaviorTree
+  m_EditorClassIdentifier: 
+  rootNode:
+    rid: 4483655978814799877
+  nodes:
+  - rid: 4483655978814799877
+  - rid: 4483655978814799878
+  - rid: 4483655978814799884
+  - rid: 4483655978814799885
+  - rid: 4483655978814799889
+  - rid: 4483655978814799893
+  - rid: 4483655978814799895
+  - rid: 3195392402657640448
+  - rid: 4483656138319200273
+  - rid: 4483656138319200280
+  - rid: 4483656138319200282
+  - rid: 3195392495305097216
+  - rid: 3195392495305097217
+  - rid: 4483656202841751554
+  - rid: 4483656205916176384
+  - rid: 4483656251841970176
+  treeState: 0
+  blackboard:
+    moveToPosition: {x: 0, y: 0, z: 0}
+    moveToPlayerPosition: {x: 0, y: 0, z: 0}
+  viewPosition: {x: 521, y: 558, z: 0}
+  viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 3195392402657640448
+      type: {class: MoveToPlayerPosition, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 6ffd206a3ffdb694288bd530dea0e2fc
+        position: {x: -1111, y: -361.99997}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        speed: 5
+        stoppingDistance: 0.1
+        updateRotation: 1
+        acceleration: 40
+        tolerance: 1
+        _playerManager: {fileID: 0}
+    - rid: 3195392495305097216
+      type: {class: AudioPlay, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 560cde7e2f06a5c41bd4ad2aaf388849
+        position: {x: -947.00006, y: -361.99997}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        _enemyController: {fileID: 0}
+        _audioManager: {fileID: 0}
+    - rid: 3195392495305097217
+      type: {class: AudioStop, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 7d0660b967c811547ba57c0a3d664701
+        position: {x: -452.00003, y: -362}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        _enemyController: {fileID: 0}
+        _audioManager: {fileID: 0}
+    - rid: 4483655978814799877
+      type: {class: RootNode, ns: BehaviorTreeNodeGraphEditor, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: ae2122d8-617f-4bdc-b478-88dd9d2e9851
+        position: {x: -708.8001, y: -906.48956}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 4483655978814799878
+    - rid: 4483655978814799878
+      type: {class: Repeat, ns: BehaviorTreeNodeGraphEditor, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 9f0bf8d8b47be6847b02497a31c8455f
+        position: {x: -708.8001, y: -822.48956}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 4483656138319200282
+        restartOnSuccess: 1
+        restartOnFailure: 0
+    - rid: 4483655978814799884
+      type: {class: RandomPosition, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: ae45d8bf2d26b044f8958cbf8bb1aea3
+        position: {x: -302.00003, y: -361.99994}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        min: {x: 0, y: 40}
+        max: {x: 40, y: 0}
+    - rid: 4483655978814799885
+      type: {class: MoveToPosition, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 6654d11990d431642b5fe4ce90508161
+        position: {x: -152.00003, y: -361.99994}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        speed: 5
+        stoppingDistance: 0.1
+        updateRotation: 1
+        acceleration: 40
+        tolerance: 1
+    - rid: 4483655978814799889
+      type: {class: DetectionRange, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 03a1e05dfa5b1534dbfa20d48ecfb107
+        position: {x: -1261, y: -362.00003}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        _range: 15
+        _playerManager: {fileID: 0}
+    - rid: 4483655978814799893
+      type: {class: Sequencer, ns: BehaviorTreeNodeGraphEditor, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 61d5aeede50f2274fa6702d560859a26
+        position: {x: -797.00006, y: -362}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 4483656251841970176
+        - rid: 4483656205916176384
+        - rid: 4483656202841751554
+    - rid: 4483655978814799895
+      type: {class: Wait, ns: BehaviorTreeNodeGraphEditor, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 062b91f35994fee4b97cb42e960b301c
+        position: {x: -602, y: -362}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        duration: 0
+    - rid: 4483656138319200273
+      type: {class: Sequencer, ns: BehaviorTreeNodeGraphEditor, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 29672f52274d99d4bb6980fff72ffc06
+        position: {x: -451.61328, y: -509}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 4483655978814799895
+        - rid: 3195392495305097217
+        - rid: 4483655978814799884
+        - rid: 4483655978814799885
+    - rid: 4483656138319200280
+      type: {class: Sequencer, ns: BehaviorTreeNodeGraphEditor, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: b3b78cfb5d6c9f8458c56a71b84c8478
+        position: {x: -947.00006, y: -509.00003}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 4483655978814799889
+        - rid: 3195392402657640448
+        - rid: 3195392495305097216
+        - rid: 4483655978814799893
+    - rid: 4483656138319200282
+      type: {class: InterruptSelector, ns: BehaviorTreeNodeGraphEditor, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 97b97871cb0c3ef4f84fd2de42ea89a7
+        position: {x: -709, y: -711.0002}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 4483656138319200280
+        - rid: 4483656138319200273
+    - rid: 4483656202841751554
+      type: {class: PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: bc8f779b86f9e904fb58ab766d2141ff
+        position: {x: -647.00006, y: -213.00002}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        _animationName: EnemyAttack
+        _animator: {fileID: 0}
+    - rid: 4483656205916176384
+      type: {class: AttackDetectionRange, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 01e2c28162d1fa44d8c2764fab24f4c0
+        position: {x: -812, y: -213.00002}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        _range: 10
+        _playerManager: {fileID: 0}
+    - rid: 4483656251841970176
+      type: {class: Wait, ns: BehaviorTreeNodeGraphEditor, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 6c8f259b05cfd644c9f104dd498e1d09
+        position: {x: -962.3999, y: -212.79999}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          moveToPlayerPosition: {x: 0, y: 0, z: 0}
+        description: 
+        drawGizmos: 0
+        duration: 0.5

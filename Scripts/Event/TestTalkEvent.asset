@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f6844e035398014eb8c9a76dabb2f96, type: 3}
+  m_Name: TestTalkEvent
+  m_EditorClassIdentifier: 
+  _eventType: 0
+  _events:
+  - rid: 7571528715522277377
+  - rid: 7571528715522277378
+  - rid: 3683049776164110336
+  - rid: 3683049776164110337
+  - rid: 3683049776164110338
+  - rid: 3683049816555257863
+  references:
+    version: 2
+    RefIds:
+    - rid: 3683049776164110336
+      type: {class: TalkEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _characterData:
+          rid: 4204026302305140738
+        _cameraPosition: 1
+        _blendDefinition:
+          m_Style: 1
+          m_Time: 1
+          m_CustomCurve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        _talkTexts:
+        - "\u305D\u308C\u3063\u3066\u672A\u6765\u306E\u4E16\u754C\u3092\u821E\u53F0\u306B\u3057\u305F\u3084\u3064\u3060\u308D\uFF1F\u30B0\u30E9\u30D5\u30A3\u30C3\u30AF\u304C\u51C4\u305D\u3046\u3060\u306D\u3002"
+    - rid: 3683049776164110337
+      type: {class: TalkEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _characterData:
+          rid: 4204026302305140739
+        _cameraPosition: 2
+        _blendDefinition:
+          m_Style: 1
+          m_Time: 1
+          m_CustomCurve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        _talkTexts:
+        - "\u305D\u3046\u305D\u3046\u3001\u3081\u3061\u3083\u304F\u3061\u3083\u30EA\u30A2\u30EB\u306A\u3093\u3060\u3088\u3002\u30B9\u30C8\u30FC\u30EA\u30FC\u3082\u5965\u6DF1\u304F\u3066\u6CA1\u5165\u611F\u629C\u7FA4\u3060\u3088\u3002"
+    - rid: 3683049776164110338
+      type: {class: TalkEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _characterData:
+          rid: 4204026302305140740
+        _cameraPosition: 2
+        _blendDefinition:
+          m_Style: 1
+          m_Time: 1
+          m_CustomCurve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        _talkTexts:
+        - "\u3078\u30FC\u3001\u305D\u3046\u306A\u3093\u3060\u3002"
+        - "\u541B\u3063\u3066\u6687\u305D\u3046\u3060\u3088\u306D\uFF08\u7B11\uFF09"
+    - rid: 3683049816555257863
+      type: {class: BranchEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _branchEvents: []
+    - rid: 4204026302305140736
+      type: {class: Yashima, ns: EventCharacterIcon, asm: Assembly-CSharp}
+      data:
+        _faical: 0
+    - rid: 4204026302305140737
+      type: {class: Yashima, ns: EventCharacterIcon, asm: Assembly-CSharp}
+      data:
+        _faical: 0
+    - rid: 4204026302305140738
+      type: {class: Yashima, ns: EventCharacterIcon, asm: Assembly-CSharp}
+      data:
+        _faical: 0
+    - rid: 4204026302305140739
+      type: {class: Yashima, ns: EventCharacterIcon, asm: Assembly-CSharp}
+      data:
+        _faical: 0
+    - rid: 4204026302305140740
+      type: {class: Yashima, ns: EventCharacterIcon, asm: Assembly-CSharp}
+      data:
+        _faical: 0
+    - rid: 7571528715522277377
+      type: {class: TalkEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _characterData:
+          rid: 4204026302305140736
+        _cameraPosition: 0
+        _blendDefinition:
+          m_Style: 1
+          m_Time: 1
+          m_CustomCurve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        _talkTexts:
+        - "\u304A\u3044\u3001\u6700\u8FD1\u3069\u3093\u306A\u30B2\u30FC\u30E0\u306B\u30CF\u30DE\u3063\u3066\u308B\uFF1F"
+    - rid: 7571528715522277378
+      type: {class: TalkEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _characterData:
+          rid: 4204026302305140737
+        _cameraPosition: 2
+        _blendDefinition:
+          m_Style: 1
+          m_Time: 1
+          m_CustomCurve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        _talkTexts:
+        - "\u6700\u8FD1\u300E\u30B5\u30A4\u30D0\u30FC\u30D1\u30F3\u30AF2077\u300F\u306B\u30CF\u30DE\u3063\u3066\u308B\u3088\u3002\u81EA\u7531\u5EA6\u304C\u9AD8\u304F\u3066\u9762\u767D\u3044\u3002"

@@ -1,0 +1,7 @@
+/// <summary>ƒTƒEƒ“ƒh‚ÌŽí—Þ </summary>
+public enum SoundType
+{
+    BGM = 0,
+    SE = 1,
+    VOICE = 2,
+}

@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f6844e035398014eb8c9a76dabb2f96, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  _events:
+  - rid: 7571528786727927808
+  - rid: 7571528786727927810
+  references:
+    version: 2
+    RefIds:
+    - rid: 3683049912042782726
+      type: {class: TalkEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _characterData:
+          rid: 7571528945203412999
+        _talkTexts:
+        - New Message
+    - rid: 3683049912042782729
+      type: {class: ActionEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _releaseFlagEvents:
+        - rid: 3683049912042782730
+    - rid: 3683049912042782730
+      type: {class: TestGameEvent, ns: , asm: Assembly-CSharp}
+    - rid: 7571528786727927808
+      type: {class: TalkEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _characterData:
+          rid: 7571528945203412996
+        _talkTexts:
+        - aaaaaaaaaaaaaaaaaaaa
+        - bbbbbbbbbbbbbbbbbbb
+        - ccccccccccccccccccc
+    - rid: 7571528786727927810
+      type: {class: BranchEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _branchEvents:
+        - _selectionName: cccccccccccc
+          _selectEvents:
+          - rid: 7571528786727927814
+          - rid: 7571528786727927815
+          - rid: 3683049912042782726
+          - rid: 3683049912042782729
+        - _selectionName: bbbbbbbbbbbbbb
+          _selectEvents:
+          - rid: 7571528786727927812
+    - rid: 7571528786727927812
+      type: {class: TalkEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _characterData:
+          rid: 7571528945203413000
+        _talkTexts:
+        - dadadada
+    - rid: 7571528786727927814
+      type: {class: TalkEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _characterData:
+          rid: 7571528945203412997
+        _talkTexts:
+        - aaaaaaaaaaaaaaaaaaaa
+    - rid: 7571528786727927815
+      type: {class: TalkEvent, ns: , asm: Assembly-CSharp}
+      data:
+        _characterData:
+          rid: 7571528945203412998
+        _talkTexts:
+        - bbbbbbbbbbbbbbbbb
+    - rid: 7571528945203412996
+      type: {class: Character1, ns: EventCharacterIcon, asm: Assembly-CSharp}
+      data:
+        _faical: 0
+    - rid: 7571528945203412997
+      type: {class: Character1, ns: EventCharacterIcon, asm: Assembly-CSharp}
+      data:
+        _faical: 0
+    - rid: 7571528945203412998
+      type: {class: Character1, ns: EventCharacterIcon, asm: Assembly-CSharp}
+      data:
+        _faical: 0
+    - rid: 7571528945203412999
+      type: {class: Character1, ns: EventCharacterIcon, asm: Assembly-CSharp}
+      data:
+        _faical: 0
+    - rid: 7571528945203413000
+      type: {class: Character1, ns: EventCharacterIcon, asm: Assembly-CSharp}
+      data:
+        _faical: 0
