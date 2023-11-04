@@ -1,4 +1,6 @@
 # kamigoroshi-scripts
+## 制作人数
+プログラマー4名、デザイナー7名、モーション3名、サウンド3名
 ## 自分の主な担当箇所
 
 ・Playerの状態遷移管理作成(StateMachine)
